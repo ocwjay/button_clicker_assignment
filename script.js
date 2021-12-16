@@ -2,8 +2,13 @@ function removeAddDefinitionButton() {
     document.getElementById("addDefinitionButton").remove();
 }
 
-function loginButtonChange() {
-    document.getElementById("loginButton").innerText = "Logout";
+function loginButtonChange(element) {
+    if(element.innerText == "login") {
+        element.innerText = "Logout";
+    }
+    else {
+        element.innerText = "Login";
+    }
 }
 
 function likeNinja() {
