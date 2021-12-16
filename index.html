@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button Clicker Assignment</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="navbar">
+        <a href="#" class="logo">Dojonary</a>
+        <input type="search" name="search" id="search" placeholder="Search">
+        <button class="loginButton" id="loginButton" onclick="loginButtonChange()">Login</button>
+    </div>
+    <div class="contentContainer">
+        <div class="col-1">
+            <div class="definitionBlock">
+                <div class="wordInfo">
+                    <h2 class="word">ninja</h2>
+                    <p class="wordType">noun</p>
+                    <p class="plural">Plural: <span class="pluralItalics">ninjas</span></p>
+                    <button class="likeButton" onclick="likeNinja()">Like</button>
+                </div>
+                <div class="definition">
+                    <p>A practitioner skilled in the <a href="#">Japanese</a> art of <a href="#">ninjutsu</a></p>
+                </div>
+            </div>
+            <div class="definitionBlock">
+                <div class="wordInfo">
+                    <h2 class="word">ninja</h2>
+                    <p class="wordType">noun</p>
+                    <p class="plural">Plural: <span class="pluralItalics">ninjas</span></p>
+                    <button class="likeButton" onclick="likeNinja()">Like</button>
+                </div>
+                <div class="definition">
+                    <p>A <a href="#">programmer</a> who breaks down problems with <a href="#">zen</a>-like focus</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-2">
+            <div class="dojonaryBlock">
+                <h3>Dojonary is defined by <span class="dojonaryBold">YOU</span></h3>
+                <button class="addDefinitionButton" id="addDefinitionButton" onclick="removeAddDefinitionButton()">Add Definiton</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
